@@ -107,17 +107,17 @@ body {
 		<div class="dropdown">
 			<button class="dropbtn">Customer Management</button>
 			<div class="dropdown-content">
-				<a href="#">Create Patient</a> 
-				<a href="updatepatient.jsp">Update Patient</a> 
+				<a href="create_patient.jsp">Create Patient</a> 
+				<a href="update_patient.jsp">Update Patient</a> 
 				<a href="#">Delete Patient</a>
-				<a href="viewpatients.jsp">View Patients</a> 
+				<a href="view_patients.jsp">View Patients</a> 
 				<a href="#">search Patient</a>
 				<a href="#">Billing</a> 
 			</div>
 		</div>
-		<a href="logout.jsp" class="disable">Pharmacy</a> 
-		<a href="logout.jsp" class="disable">Diagnostics</a> 
-		<a href="logout.jsp">Log out</a>
+		<a href="#" class="disable">Pharmacy</a> 
+		<a href="#" class="disable">Diagnostics</a> 
+		<a href="#">Log out</a>
 	</div>
 	<div class="main">
 		

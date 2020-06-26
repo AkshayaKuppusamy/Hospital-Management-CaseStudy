@@ -106,9 +106,9 @@ body {
 		<div class="dropdown">
 			<button class="dropbtn" >Customer Management</button>
 		</div>
-		<a href="logout.jsp" class="disable">Pharmacy</a> 
-		<a href="logout.jsp" >Diagnostics</a> 
-		<a href="logout.jsp">Log out</a>
+		<a href="#" class="disable">Pharmacy</a> 
+		<a href="#" >Diagnostics</a> 
+		<a href="#">Log out</a>
 	</div>
 	<div class="main"></div>
 </body>

@@ -95,7 +95,6 @@ body {
 
 .main {
 	padding: 80px;
-	background-color: #97FFFF;
 }
 </style>
 </head>
@@ -105,11 +104,11 @@ body {
 	</div>
 	<div class="navbar">
 		<div class="dropdown">
-			<button class="dropbtn" disabled>Customer Management</button>
+			<button class="dropbtn" >Customer Management</button>
 		</div>
-		<a href="logout.jsp" >Pharmacy</a> 
-		<a href="logout.jsp" class="disable">Diagnostics</a> 
-		<a href="logout.jsp">Log out</a>
+		<a href="#" >Pharmacy</a> 
+		<a href="#" class="disable">Diagnostics</a> 
+		<a href="#">Log out</a>
 	</div>
 	<div class="main"></div>
 </body>
