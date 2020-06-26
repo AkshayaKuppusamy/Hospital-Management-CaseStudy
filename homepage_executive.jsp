@@ -13,6 +13,7 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
+	background-color: #97FFFF;
 }
 
 .header {
@@ -93,8 +94,8 @@ body {
 }
 
 .main {
-	padding: 500px;
-	background-color: #97FFFF;
+	padding: 80px;
+	
 }
 </style>
 </head>
@@ -107,9 +108,9 @@ body {
 			<button class="dropbtn">Customer Management</button>
 			<div class="dropdown-content">
 				<a href="#">Create Patient</a> 
-				<a href="#">Update Patient</a> 
+				<a href="updatepatient.jsp">Update Patient</a> 
 				<a href="#">Delete Patient</a>
-				<a href="#">View Patients</a> 
+				<a href="viewpatients.jsp">View Patients</a> 
 				<a href="#">search Patient</a>
 				<a href="#">Billing</a> 
 			</div>
@@ -118,6 +119,8 @@ body {
 		<a href="logout.jsp" class="disable">Diagnostics</a> 
 		<a href="logout.jsp">Log out</a>
 	</div>
-	<div class="main"></div>
+	<div class="main">
+		
+	</div>
 </body>
 </html>

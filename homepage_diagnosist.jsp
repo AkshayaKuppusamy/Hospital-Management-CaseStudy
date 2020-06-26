@@ -13,6 +13,7 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
+	background-color: #97FFFF;
 }
 
 .header {
@@ -93,8 +94,7 @@ body {
 }
 
 .main {
-	padding: 500px;
-	background-color: #97FFFF;
+	padding: 80px;
 }
 </style>
 </head>
