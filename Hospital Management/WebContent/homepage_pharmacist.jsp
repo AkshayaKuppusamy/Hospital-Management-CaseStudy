@@ -104,10 +104,10 @@ body {
 	</div>
 	<div class="navbar">
 		<div class="dropdown">
-			<button class="dropbtn" >Customer Management</button>
+			<button class="dropbtn" >Patient</button>
 		</div>
-		<a href="#" class="disable">Pharmacy</a> 
-		<a href="#" >Diagnostics</a> 
+		<a href="#" >Pharmacy</a> 
+		<a href="#" class="disable">Diagnostics</a> 
 		<a href="#">Log out</a>
 	</div>
 	<div class="main"></div>

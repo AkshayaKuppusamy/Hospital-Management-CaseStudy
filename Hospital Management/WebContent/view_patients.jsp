@@ -95,6 +95,7 @@ body {
 
 .main {
 	padding: 80px;
+	
 }
 </style>
 </head>
@@ -104,12 +105,22 @@ body {
 	</div>
 	<div class="navbar">
 		<div class="dropdown">
-			<button class="dropbtn" >Customer Management</button>
+			<button class="dropbtn">Patient</button>
+			<div class="dropdown-content">
+				<a href="create_patient.jsp">Create Patient</a> 
+				<a href="update_patient.jsp">Update Patient</a> 
+				<a href="#">Delete Patient</a>
+				<a href="view_patients.jsp">View Patients</a> 
+				<a href="#">search Patient</a>
+				<a href="#">Billing</a> 
+			</div>
 		</div>
-		<a href="#" >Pharmacy</a> 
+		<a href="#" class="disable">Pharmacy</a> 
 		<a href="#" class="disable">Diagnostics</a> 
 		<a href="#">Log out</a>
 	</div>
-	<div class="main"></div>
+	<div class="main">
+		<a href="./ViewPatients_controller"><p align="center">Click here to get list of patients</p></a>
+	</div>
 </body>
 </html>

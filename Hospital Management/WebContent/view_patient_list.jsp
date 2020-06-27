@@ -1,3 +1,4 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -94,7 +95,7 @@ body {
 }
 
 .main {
-	padding: 80px;
+	 padding: 80px;
 	
 }
 </style>
@@ -105,7 +106,7 @@ body {
 	</div>
 	<div class="navbar">
 		<div class="dropdown">
-			<button class="dropbtn">Customer Management</button>
+			<button class="dropbtn">Patient</button>
 			<div class="dropdown-content">
 				<a href="create_patient.jsp">Create Patient</a> 
 				<a href="update_patient.jsp">Update Patient</a> 
@@ -120,7 +121,35 @@ body {
 		<a href="#">Log out</a>
 	</div>
 	<div class="main">
-		
+		<h1 align="center">View Patients</h1>
+		<table border="1" cellpadding="15px" align="center">
+			<tr>
+				<th>Patient ID</th>
+				<th>SSN ID</th>
+				<th>Name</th>
+				<th>Age</th>
+				<th>Date of admission</th>
+				<th>Type of bed</th>
+				<th>Address</th>
+				<th>State</th>
+				<th>City</th>
+				<th>Status</th>
+			</tr>
+			<c:forEach var="items" items="${patient}">
+				<tr>
+					<td>${items.patient_id}</td>
+					<td>${items.patient_ssn_id}</td>
+					<td>${items.patient_name}</td>
+					<td>${items.patient_age}</td>
+					<td>${items.date_of_admission}</td>
+					<td>${items.type_of_bed}</td>
+					<td>${items.patient_address}</td>
+					<td>${items.patient_state}</td>
+					<td>${items.patient_city}</td>
+					<td>${items.patient_status}</td>
+				</tr>
+			</c:forEach>
+		</table>
 	</div>
 </body>
 </html>
