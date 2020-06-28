@@ -99,6 +99,13 @@ body {
 </style>
 </head>
 <body>
+	<%
+		response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+		
+		if(session.getAttribute("user")==null){
+			response.sendRedirect("index.jsp");
+		}
+	%>
 	<div class="header">
 		<h1>ABC Hospital Management System</h1>
 	</div>
@@ -108,7 +115,7 @@ body {
 		</div>
 		<a href="#" class="disable">Pharmacy</a> 
 		<a href="#" >Diagnostics</a> 
-		<a href="#">Log out</a>
+		<a href="logout.jsp">Log out</a>
 	</div>
 	<div class="main"></div>
 </body>

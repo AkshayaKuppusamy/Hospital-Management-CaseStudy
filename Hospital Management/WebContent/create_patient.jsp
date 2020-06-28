@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+	
 <!DOCTYPE html>
 <html>
 <head>
@@ -113,6 +114,13 @@ p{
 </style>
 </head>
 <body>
+	<%
+		response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+		
+		if(session.getAttribute("user")==null){
+			response.sendRedirect("index.jsp");
+		}
+	%>
 	<div class="header">
 		<h1>ABC Hospital Management System</h1>
 	</div>
@@ -131,7 +139,7 @@ p{
 		</div>
 		<a href="#" class="disable">Pharmacy</a> 
 		<a href="#" class="disable">Diagnostics</a> 
-		<a href="#">Log out</a>
+		<a href="logout.jsp">Log out</a>
 	</div>
 	<div class="main">
 		<h2>Patient Registration</h2>
