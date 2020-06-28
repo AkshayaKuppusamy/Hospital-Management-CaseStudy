@@ -51,7 +51,7 @@ public class CreatePatient_controller extends HttpServlet {
 	    {
 	    	RequestDispatcher rd = getServletContext().getRequestDispatcher("/create_patient.jsp");
         
-	    	response.getWriter().println("<script type=\"text/javascript\">\r\n" + 
+	    	out.println("<script type=\"text/javascript\">\r\n" + 
 	    			"	alert(\"Patient is registered successfully\");\r\n" + 
 	    			"	</script>");
         //out.println("Patient is registered successfully");
@@ -60,7 +60,7 @@ public class CreatePatient_controller extends HttpServlet {
 	    {
 	    	RequestDispatcher rd = getServletContext().getRequestDispatcher("/create_patient.jsp");
 
-	    	response.getWriter().println("<script type=\"text/javascript\">\r\n" + 
+	    	out.println("<script type=\"text/javascript\">\r\n" + 
 	    			"	alert(\"Sorry patient cannot be registered\");\r\n" + 
 	    			"	</script>");
 	        

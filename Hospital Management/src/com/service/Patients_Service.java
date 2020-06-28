@@ -15,4 +15,5 @@ public class Patients_Service {
 		status = Patients_DAO.createPatient(patient);
 		return status;
 	}
+	
 }

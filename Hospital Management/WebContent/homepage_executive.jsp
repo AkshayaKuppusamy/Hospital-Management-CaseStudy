@@ -18,7 +18,7 @@ body {
 
 .header {
 	padding: 10px;
-	text-align: left;
+	text-align: center;
 	background: #66CCCC;
 	color: white;
 }
@@ -110,7 +110,7 @@ body {
 				<a href="create_patient.jsp">Create Patient</a> 
 				<a href="update_patient.jsp">Update Patient</a> 
 				<a href="#">Delete Patient</a>
-				<a href="view_patients.jsp">View Patients</a> 
+				<a href="ViewPatients_controller">View Patients</a> 
 				<a href="#">search Patient</a>
 				<a href="#">Billing</a> 
 			</div>
@@ -120,7 +120,14 @@ body {
 		<a href="#">Log out</a>
 	</div>
 	<div class="main">
-		
+	<%		
+    	HttpSession ses = request.getSession(false);// don't create if it doesn't exist
+    	if(ses != null && !ses.isNew()) {
+    		response.sendRedirect("ViewPatients_controller");
+	   	} else {
+    	    response.sendRedirect("/index.jsp");
+    	}
+	%>
 	</div>
 </body>
 </html>
