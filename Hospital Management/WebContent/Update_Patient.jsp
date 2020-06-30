@@ -117,11 +117,11 @@ p{
 </head>
 <body>
 	<%
-	//response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+	response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
 		
-		//if(session.getAttribute("user")==null){
-		//	response.sendRedirect("index.jsp");
-		//}
+		if(session.getAttribute("user")==null){
+			response.sendRedirect("index.jsp");
+		}
 	%>
 	<div class="header">
 		<h1>ABC Hospital Management System</h1>
