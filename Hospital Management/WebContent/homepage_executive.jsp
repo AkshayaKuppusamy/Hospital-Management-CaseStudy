@@ -105,6 +105,8 @@ body {
 		
 		if(session.getAttribute("user")==null){
 			response.sendRedirect("index.jsp");
+		}else{
+			response.sendRedirect("ViewPatients_controller");
 		}
 	%>
 	<div class="header">
@@ -115,10 +117,10 @@ body {
 			<button class="dropbtn">Patient</button>
 			<div class="dropdown-content">
 				<a href="create_patient.jsp">Create Patient</a> 
-				<a href="update_patient.jsp">Update Patient</a> 
-				<a href="#">Delete Patient</a>
+				<a href="Update_Patient.jsp">Update Patient</a> 
+				<a href="Delete_Patient.jsp">Delete Patient</a>
 				<a href="ViewPatients_controller">View Patients</a> 
-				<a href="#">search Patient</a>
+				<a href="SearchPatientById.jsp">Search Patient</a>
 				<a href="#">Billing</a> 
 			</div>
 		</div>
@@ -127,14 +129,7 @@ body {
 		<a href="logout.jsp">Log out</a>
 	</div>
 	<div class="main">
-	<%		
-    	HttpSession ses = request.getSession(false);// don't create if it doesn't exist
-    	if(ses != null && !ses.isNew()) {
-    		response.sendRedirect("ViewPatients_controller");
-	   	} else {
-    	    response.sendRedirect("/index.jsp");
-    	}
-	%>
+
 	</div>
 </body>
 </html>
